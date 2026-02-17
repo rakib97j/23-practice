@@ -5,6 +5,10 @@ function makeWhite() {
 }
 function makeBlack() {
   document.body.style.backgroundColor = "black";
+
+
+  
+  // document.body.style. = "black";
 }
 function makeBlue() {
   document.body.style.backgroundColor = "blue";
@@ -31,4 +35,19 @@ const newColor = document.getElementById("hex");
 newColor.onclick = anotherColor;
 function anotherColor() {
   document.body.style.backgroundColor = "#4D3933";
+}
+
+
+
+// mostly use event handler
+
+
+document.getElementById("make-dark-maroon").addEventListener('mouseout' , function makeDarkMaroon(){
+  document.body.style.backgroundColor = "#451128";
+})
+
+const text =document.getElementsByTagName('h1');
+
+for (let change of text){
+  change.style.color = 'gray'
 }
