@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handler</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="text">THE HEADER</h1>
+
+        <button id="update-text">Click To Change Title</button>
+
+        <script>
+          document
+            .getElementById("update-text")
+            .addEventListener("click", function () {
+              // console.log("clicker");
+              const textChange = document.getElementById("text");
+              textChange.innerText = "Updated Text by event listener";
+
+              document.body.style.backgroundColor = "gray";
+            });
+        </script>
+      </section>
+    </main>
+
+    <script src="js/handler.js"></script>
+  </body>
+</html>
