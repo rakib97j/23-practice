@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Box</title>
+
+    <style>
+      .comment {
+        background-color: aqua;
+        padding: 20px;
+        border: 2px solid green;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>COMMENT</h1>
+      <div id="comment-box">
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus
+          totam sunt, pariatur aliquam nulla aut? Facilis, ex quo nobis unde
+          doloribus modi dolorem fugit at accusamus saepe rem porro aspernatur
+          pariatur non repellat officia odio error dolorum optio, molestiae
+          aliquam adipisci! Ex beatae, aut atque velit in natus earum?
+        </p>
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus
+          totam sunt, pariatur aliquam nulla aut? Facilis, ex quo nobis unde
+          doloribus modi dolorem fugit at accusamus saepe rem porro aspernatur
+          pariatur non repellat officia odio error dolorum optio, molestiae
+          aliquam adipisci! Ex beatae, aut atque velit in natus earum?
+        </p>
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus
+          totam sunt, pariatur aliquam nulla aut? Facilis, ex quo nobis unde
+          doloribus modi dolorem fugit at accusamus saepe rem porro aspernatur
+          pariatur non repellat officia odio error dolorum optio, molestiae
+          aliquam adipisci! Ex beatae, aut atque velit in natus earum?
+        </p>
+
+        <!-- <form> -->
+        <p>COMMENT</p>
+        <textarea
+          name=""
+          id="text-box"
+          cols="100"
+          rows="5"
+          placeholder="Drop Your Comment"
+        ></textarea>
+
+        <br />
+        <button id="comment-btn">COMMENT</button>
+        <!-- </form> -->
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("comment-btn")
+        .addEventListener("click", function () {
+          //   1 add text area
+          const textBox = document.getElementById("text-box");
+          //  2 set the value of text area
+          const newComment = textBox.value;
+
+          //   console.log(newComment);
+
+          //   3  submit destination
+
+          const publishComment =document.getElementById('comment-box')
+        });
+    </script>
+
+    <script src="js/commentBox.js"></script>
+  </body>
+</html>
