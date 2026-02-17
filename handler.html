@@ -7,21 +7,54 @@
   </head>
   <body>
     <main>
+      <!-- text change system -->
       <section>
         <h1 id="text">THE HEADER</h1>
 
         <button id="update-text">Click To Change Title</button>
+      </section>
+
+      <!-- log in  -->
+
+      <section
+        style="
+          background-color: aqua;
+          text-align: center;
+          padding: 30px;
+          margin: 20px;
+        "
+      >
+        <h2 id="title">SING UP !!!</h2>
+        <button
+          id="login-btn"
+          style="
+            padding: 8px;
+            border-radius: 12px;
+            border: none;
+            text-transform: uppercase;
+            background-color: chartreuse;
+          "
+        >
+          GO ......
+        </button>
+      </section>
+
+      <!-- name change by input from user  -->
+      <section>
+        <h1 id="main-name">NAME</h1>
+        <input
+          type="text"
+          name=""
+          id="input-text"
+          placeholder="Enter Your Name"
+        />
+        <br />
+        <br />
+        <br />
+        <button id="input-btn">UPDATE</button>
 
         <script>
-          document
-            .getElementById("update-text")
-            .addEventListener("click", function () {
-              // console.log("clicker");
-              const textChange = document.getElementById("text");
-              textChange.innerText = "Updated Text by event listener";
-
-              document.body.style.backgroundColor = "gray";
-            });
+          
         </script>
       </section>
     </main>
