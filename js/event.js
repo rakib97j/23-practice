@@ -21,8 +21,14 @@ blueBtn.onclick = function clickOn() {
 // 3rd option
 const makeGray = document.getElementById("gray");
 
-makeGray.onclick =clickGray;
+makeGray.onclick = clickGray;
 
-function clickGray(){
-    document.body.style.backgroundColor =('gray')
+function clickGray() {
+  document.body.style.backgroundColor = "gray";
+}
+
+const newColor = document.getElementById("hex");
+newColor.onclick = anotherColor;
+function anotherColor() {
+  document.body.style.backgroundColor = "#4D3933";
 }
