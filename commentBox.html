@@ -39,22 +39,22 @@
           pariatur non repellat officia odio error dolorum optio, molestiae
           aliquam adipisci! Ex beatae, aut atque velit in natus earum?
         </p>
-
-        <!-- <form> -->
-        <p>COMMENT</p>
-        <textarea
-          name=""
-          id="text-box"
-          cols="100"
-          rows="5"
-          placeholder="Drop Your Comment"
-        ></textarea>
-
-        <br />
-        <button id="comment-btn">COMMENT</button>
-        <!-- </form> -->
       </div>
     </section>
+
+    <!-- <form> -->
+    <p>COMMENT</p>
+    <textarea
+      name=""
+      id="text-box"
+      cols="100"
+      rows="5"
+      placeholder="Drop Your Comment"
+    ></textarea>
+
+    <br />
+    <button id="comment-btn">COMMENT</button>
+    <!-- </form> -->
 
     <script>
       document
@@ -65,11 +65,22 @@
           //  2 set the value of text area
           const newComment = textBox.value;
 
-          //   console.log(newComment);
+          // console.log(newComment);
 
           //   3  submit destination
 
-          const publishComment =document.getElementById('comment-box')
+          const publishComment = document.getElementById("comment-box");
+          // console.log(publishComment);
+
+
+          // 4 create
+          const newP =document.createElement('p');
+          newP.classList.add('comment')
+          newP.innerText =newComment;
+
+          // 5 append p
+          publishComment.appendChild(newP);
+
         });
     </script>
 
