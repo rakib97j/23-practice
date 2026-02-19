@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODE EVENT</title>
+  </head>
+  <body>
+    <section>
+      <button id="mouse-enter">MOUSE ENTER</button>
+
+      <br />
+      <br />
+      <br />
+
+      <input
+        type="text"
+        name=""
+        id="text-input"
+        placeholder="Enter your name"
+      />
+      <br />
+      <br />
+      <input
+        type="email"
+        name=""
+        id="email-input"
+        placeholder="Enter your  Email"
+      />
+    </section>
+
+    <script>
+    //   document  //keydown 
+    //     .getElementById("email-input")
+    //     .addEventListener("keydown", function (e) {
+    //       console.log("Typing..................." ,e.target.value);
+    //     });
+      document  //keyUp
+        .getElementById("email-input")
+        .addEventListener("keyup", function (e) {
+          console.log("Typing..................." ,e.target.value);
+        });
+    </script>
+
+    <script src="js/moreEvent.js"></script>
+  </body>
+</html>
