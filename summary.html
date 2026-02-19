@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+<body>
+
+    <h1>Dom Event Summary</h1>
+    <input type="text" id="name-input" placeholder="Enter Your Name">
+    <button onclick="addName()" >Add</button>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="name-container" style="background-color: aqua; border: 2px solid greenyellow; border-radius: 30px; text-align: center;">
+
+    </div>
+
+    <script>
+        function addName(){
+            const nameInput =document.getElementById('name-input');
+            const newName =nameInput.value;
+            console.log(newName);
+
+            // 2nd 
+            const nameContainer =document.getElementById('name-container');
+
+            // 3rd create 
+
+            const p =document.createElement('p');
+            p.innerText =newName;
+
+
+            // 4th append child
+            nameContainer.appendChild(p)
+            
+            
+        }
+    </script>
+    
+    
+</body>
+</html>
